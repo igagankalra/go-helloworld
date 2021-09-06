@@ -64,6 +64,7 @@ func metrics(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
+// Demux -- 
 	http.HandleFunc("/", helloWorld)
 	http.HandleFunc("/metrics", metrics)
 	http.HandleFunc("/status", status)
